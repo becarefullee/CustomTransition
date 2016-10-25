@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = image
+        navigationController?.delegate = nil
     }
   
   @IBOutlet weak var imageView: UIImageView!

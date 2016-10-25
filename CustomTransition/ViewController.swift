@@ -22,6 +22,10 @@ class ViewController: UIViewController {
     navigationController?.delegate = self
   }
 
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.delegate = self
+  }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     guard let cell = sender as? DetailCollectionViewCell,
