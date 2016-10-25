@@ -16,8 +16,13 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         imageView.image = image
     }
-
+  
   @IBOutlet weak var imageView: UIImageView!
+}
 
 
+extension DetailViewController: CustomTransitionAnimatable {
+  var morphViews: [UIView] { return [imageView] }
+  var animatableViews: [UIView] {return [imageView]}
+  
 }

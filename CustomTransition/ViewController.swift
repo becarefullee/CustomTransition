@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
   
-  let collectionViewDataSource = [UIImage(named: "image")]
+  let collectionViewDataSource = [UIImage(named: "image_0"), UIImage(named: "image_1"), UIImage(named: "image_2")]
+
   fileprivate var selectedCell: DetailCollectionViewCell?
   
   @IBOutlet weak var imageCollectionView: UICollectionView!
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     imageCollectionView.dataSource = self
+    navigationController?.delegate = self
   }
 
   
@@ -49,4 +51,16 @@ extension ViewController: UICollectionViewDataSource {
   
 }
 
+extension ViewController: CustomTransitionAnimatable {
+  var morphViews: [UIView] { return [selectedCell!.imageView]  }
+  var animatableViews: [UIView] {return imageCollectionView.visibleCells}
+}
 
+extension ViewController: UINavigationControllerDelegate {
+  func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    if fromVC is CustomTransitionAnimatable && toVC is CustomTransitionAnimatable {
+        return CustomTransitionAnimator()
+    }
+    return nil
+  }
+}

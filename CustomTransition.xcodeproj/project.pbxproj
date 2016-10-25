@@ -14,6 +14,8 @@
 		1814B2151DBEE26600EF081B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1814B2131DBEE26600EF081B /* LaunchScreen.storyboard */; };
 		1814B21D1DBEE5D000EF081B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814B21C1DBEE5D000EF081B /* DetailViewController.swift */; };
 		1814B21F1DBEE5EC00EF081B /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814B21E1DBEE5EC00EF081B /* DetailCollectionViewCell.swift */; };
+		1814B2211DBEF0D200EF081B /* CustomTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814B2201DBEF0D200EF081B /* CustomTransitionAnimator.swift */; };
+		1814B2231DBEF16B00EF081B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814B2221DBEF16B00EF081B /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1814B2161DBEE26600EF081B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1814B21C1DBEE5D000EF081B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1814B21E1DBEE5EC00EF081B /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		1814B2201DBEF0D200EF081B /* CustomTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionAnimator.swift; sourceTree = "<group>"; };
+		1814B2221DBEF16B00EF081B /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				1814B2111DBEE26600EF081B /* Assets.xcassets */,
 				1814B2131DBEE26600EF081B /* LaunchScreen.storyboard */,
 				1814B2161DBEE26600EF081B /* Info.plist */,
+				1814B2201DBEF0D200EF081B /* CustomTransitionAnimator.swift */,
+				1814B2221DBEF16B00EF081B /* Utility.swift */,
 			);
 			path = CustomTransition;
 			sourceTree = "<group>";
@@ -145,6 +151,8 @@
 			files = (
 				1814B21D1DBEE5D000EF081B /* DetailViewController.swift in Sources */,
 				1814B20D1DBEE26500EF081B /* ViewController.swift in Sources */,
+				1814B2231DBEF16B00EF081B /* Utility.swift in Sources */,
+				1814B2211DBEF0D200EF081B /* CustomTransitionAnimator.swift in Sources */,
 				1814B20B1DBEE26500EF081B /* AppDelegate.swift in Sources */,
 				1814B21F1DBEE5EC00EF081B /* DetailCollectionViewCell.swift in Sources */,
 			);
@@ -310,6 +318,7 @@
 				1814B21B1DBEE26600EF081B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
